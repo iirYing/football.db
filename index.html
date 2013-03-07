@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="football.db : Free open public domain football database &amp; schema" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>football.db</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/geraldb/football.db">View on GitHub</a>
+
+          <h1 id="project_title">football.db</h1>
+          <h2 id="project_tagline">Free open public domain football database &amp; schema</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/geraldb/football.db/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/geraldb/football.db/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Welcome to <code>football.db</code>
+</h1>
+
+<p>A free open public domain football (soccer) database &amp; schema
+for use in any (programming) language
+(e.g. uses plain text fixtures/data sets)</p>
+
+<h2>Usage</h2>
+
+<p>Build yourself a copy of the <code>football.db</code> from the plain text fixtures
+in three steps.</p>
+
+<p>Step 1:  Get a copy of the <code>world.db</code> fixtures</p>
+
+<pre><code>$ git clone git://github.com/geraldb/world.db.git
+</code></pre>
+
+<p>Step 2:  Get a copy the <code>football.db</code> fixtures</p>
+
+<pre><code>$ git clone git://github.com/geraldb/football.db.git
+</code></pre>
+
+<p>Step 3:  Let's build the <code>football.db</code></p>
+
+<pre><code>$ sportdb setup --include ./football.db --worldinclude ./world.db --dbname football.db
+</code></pre>
+
+<p>That's it.</p>
+
+<p><img src="https://raw.github.com/geraldb/football.db/master/i/sqlitestudio.png" alt=""></p>
+
+<h2>Football (Soccer) Events</h2>
+
+<h3>International w/ national teams (e.g. Austria, England, etc.)</h3>
+
+<p>World</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/world">FIFA World Cup 2010, 2014</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/world">FIFA World Cup Quali 2014</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/world">FIFA Confederations Cup 2009, 2013</a></li>
+</ul><p>America (North/Central America and the Caribeans, South America)</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/amercia">CONCACAF Copa Oro / Gold Cup 2011, 2013</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/amercia">CONMEBOL Copa América 2011, 2015</a></li>
+</ul><p>Europe</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/europe">UEFA European Football Championship (Euro) 2012, 2008</a></li>
+</ul><h3>International w/ football club teams (e.g. Barcelona, Manchester Utd, etc.)</h3>
+
+<p>Amercia (North/Central America and the Caribeans, South America)</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/club/america">CONCACAF Champions League 2011/12, 2012/13</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/club/america">CONMEBOL Copa Sudamericana 2012</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/club/america">CONMEBOL Copa Libertadores 2012, 2013</a></li>
+</ul><p>Europe</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/club/europe">UEFA Champions League 2011/12, 2012/13</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/club/europe">UEFA Europa League 2011/12</a></li>
+</ul><h3>National leagues &amp; cups w/ football club teams</h3>
+
+<p>Europe</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/en">English Permier League 2012/13</a></li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/de">Deutsche Bundesliga 2012/13</a></li>
+<li>
+<a href="https://github.com/geraldb/football.db/tree/master/at">Österreichische Bundesliga 2011/12, 2012/13</a>,
+<a href="https://github.com/geraldb/sport.db/tree/master/at">ÖFB Cup 2011/12, 2012/13</a>
+</li>
+<li><a href="https://github.com/geraldb/football.db/tree/master/ro">Romania Liga 1 2012/13</a></li>
+</ul><p>North America</p>
+
+<ul>
+<li><a href="https://github.com/geraldb/football.db/tree/master/mx">México Primera División Apertura 2012</a></li>
+</ul><p>South America</p>
+
+<p>Anything missing? Add your leagues, teams, fixtures and more.</p>
+
+<h2>Demo</h2>
+
+<p>Try the <code>sport.db</code> Web Admin demo running
+on Heroku <a href="http://sportdbdemo.herokuapp.com"><code>sportdbdemo.herokuapp.com</code></a>.</p>
+
+<h2>More Info</h2>
+
+<p>For more info about the database tables and schema,
+the command line tool, the plain text fixture format
+and more
+see the <a href="https://github.com/geraldb/sport.db"><code>sport.db</code> project</a>.</p>
+
+<h2>License</h2>
+
+<p>The <code>football.db</code> schema, data and scripts are dedicated to the public domain.
+Use it as you please with no restrictions whatsoever.</p>
+
+<h2>Questions? Comments?</h2>
+
+<p>Send them along to the <a href="http://groups.google.com/group/opensport">Open Sports Database &amp; Friends Forum/Mailing List</a>. Thanks!</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">football.db maintained by <a href="https://github.com/geraldb">geraldb</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
